@@ -31,12 +31,20 @@
  */
 
 const nameArr = ["田中", "山田", "ごんたろう", "げんごろう", "ぷんじろう"];
-for (let index = 0; index < nameArr.length; index++) {
-  console.log(nameArr[index]);
-}
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
 
-const nameArr2 = nameArr.map((name) => {
-  console.log(`順番に,${name}`);
-  return name;
+// const nameArr2 = nameArr.map((name) => {
+//   //console.log(`順番に,${name}`);
+//   return name;
+// });
+// console.log(nameArr2);
+
+// nameArr.map((name) => console.log(`アロー${name}`));
+
+const numArr = [1, 2, 3, 4, 5];
+const newNumArr = numArr.filter((num) => {
+  return num % 2 === 1;
 });
-console.log(nameArr2);
+console.log(newNumArr);
